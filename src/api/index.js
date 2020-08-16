@@ -16,9 +16,9 @@ const request = axios.create({
   baseURL: '',
   timeout
 });
+request.defaults.headers.get['Content-Type'] = 'application/x-www-form-urlencoded';
+request.defaults.headers.post['Content-Type'] = 'application/json;charset=UTF-8';
 
-request.defaults.headers.post["Content-Type"] =
-  "application/json;charset=UTF-8";
 
 request.interceptors.request.use(
   function(config) {

@@ -1,0 +1,237 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	font-family: "PingFang-SC-Medium", "Microsoft YaHei", "SimHei","黑体";
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+a{
+	text-decoration: none;
+}
+i{
+	font-style: normal;
+}
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+img{
+    max-width: 100%;
+    width: 100%;
+    border-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.ellipsis1{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.ellipsis2{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.ellipsis3{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+#app{
+	background: #FFF;
+	position: absolute;
+	min-height: 100%;
+	width: 100%;
+}
+
+#task,#confirmationOrder,#addEditAddress,#walletRecord,#orderRecord,#orderDetails,#addressList{
+	position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background: #F2F2F2 url('../../assets/images/bg_wenli.png') center top;
+  background-size: 100%;
+  box-sizing: border-box;
+}
+#index{
+	.van-swipe__indicators {
+		.van-swipe__indicator {
+			width: 15px !important;
+			height: 15px !important;
+		}
+	}
+}
+#productDetails,#confirmationOrder {
+	.van-stepper{
+		button{
+			width: 52px;
+			height: 52px;
+			color: #999999;
+			font-size: 29px;
+			&:before{
+				width: 20px;
+			}
+			&:after{
+				width: 2px;
+				height: 20px;
+			}
+		}
+		input{
+			width: 78px;
+			height: 52px;
+			font-size: 28px;
+		}
+	} 
+}
+
+#walletRecord,#orderRecord{
+	.van-tabs{
+		padding-top: 0;
+		overflow: hidden;
+	}
+	.van-tabs--line .van-tabs__wrap{
+		height: 75px;
+		line-height: 75px;
+	}
+	.van-tab{
+		line-height: 75px;
+		color: #333333;
+		font-size: 32px;
+		overflow: hidden;
+	}
+	.van-tabs__line{
+		height: 4px;
+		background-color: #47BCAA;
+	}
+	.van-tab--active{
+		.van-ellipsis{
+			color: #47BCAA;
+		}
+	}
+}
+
+#orderRecord{
+	.van-list__loading-text,.van-list__finished-text{
+		font-size: 30px;
+	}
+}
+
+#addEditAddress{
+	.van-picker-column__item{
+		font-size: 28px;
+	}
+	.van-picker__toolbar{
+		height: 90px;
+		line-height: 90px;
+		.van-picker__cancel,.van-picker__confirm{
+			font-size: 28px;
+		}
+	}
+	.van-switch__node{
+		background-color: #fff;
+	}
+	.van-switch{
+		background-color: #C3C3C3;
+	}
+}
+// 修改vant框架样式
+.van-toast{
+	width: auto;
+	padding: 30px 40px 40px 40px;
+}
+.van-loading__spinner{
+	width: 80px;
+	height: 80px;
+}
+.van-toast__text{
+	font-size: 26px;
+	line-height: 1.5
+}
+.van-dialog__header{
+	font-size: 30px;
+}
+.van-toast--default{
+	width: 150px!important;
+	padding: 35px!important;
+	.van-toast__text{
+		font-size: 26px!important;
+	}
+}
+.van-toast--text{
+	padding: 20px 40px!important;
+	font-size: 26px!important;
+}
+.van-button--large{
+	height: 80px;
+	line-height: 80px;
+}
+.van-button__text{
+	font-size: 30px;
+}
+.van-list__finished-text,.van-list__loading-text{
+	font-size: 30px;
+}
+.van-cell{
+	line-height: 98px;
+}
+.van-cell__title{
+	font-size: 28px;
+	color: #333333;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.van-cell__right-icon{
+	line-height: 98px;
+	height: 98px;
+	font-size: 40px;
+}
+.van-collapse-item__content{
+	font-size: 24px;
+	color: #666;
+	padding: 20px 50px;
+	line-height: 1.8;
+}
+.van-stepper__input[disabled]{
+	color: #000;
+}
