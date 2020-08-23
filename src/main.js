@@ -7,7 +7,12 @@ import request from "@/api/index";
 import VueLazyLoad from "vue-lazyload";
 import './vant'
 import 'vant/lib/index.css';
+import * as fundebug from "fundebug-javascript";
+import fundebugVue from "fundebug-vue";
 
+fundebug.apikey = "11570636f4d1c5337b61ec277873d92682ad774cc7b8b444748afa419a3cab00"
+
+fundebugVue(fundebug, Vue);
 Vue.config.productionTip = false
 
 // 图片懒加载
